@@ -1,0 +1,20 @@
+{
+  "name": "api_postresql",
+  "version": "1.0.0",
+  "description": "School work of Data Base II",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnesBezerra/API_PostreSQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonnesBezerra/API_PostreSQL/issues"
+  },
+  "homepage": "https://github.com/JonnesBezerra/API_PostreSQL#readme"
+}
