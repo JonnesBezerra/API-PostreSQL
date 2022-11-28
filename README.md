@@ -2,7 +2,7 @@
 
 School work of Data Base II
 
-Made by [@CarlosAlmeida]() [@JonnesBezerra](https://github.com/JonnesBezerra)
+Made by [@CarlosAlmeida]() and [@JonnesBezerra](https://github.com/JonnesBezerra)
 
 ---
 ### Install dependecies:
