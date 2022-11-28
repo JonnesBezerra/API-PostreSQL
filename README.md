@@ -2,6 +2,8 @@
 
 School work of Data Base II
 
+Made by [@JonnesBezerra]()
+
 ---
 ### Install dependecies:
 ```
