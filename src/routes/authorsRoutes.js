@@ -37,4 +37,35 @@ router.post('/', async (request, response) => {
   }
 })
 
+router.put('/:id', async (request, response) => {
+  try {
+    const { id } = request.params;
+    const author = request.body;
+    const { rowCount } = await authorDB.update(author, id);
+    if (rowCount > 0) {
+      response.status(200).json({ message: `Author with id ${id} was updated` });
+    } else {
+      res.status(404).json({ message: 'Author not found' });
+    }
+  } catch (error) {
+    console.log(error);
+    response.status(500).json({ message: error.sqlMessage });
+  }
+});
+
+router.delete('/:id', async (request, response) => {
+  try {
+    const { id } = request.params;
+    const { rowCount } = await authorDB.remove(id);
+    if (rowCount > 0) {
+      response.status(200).json({ message: `Author with id ${id} was deleted` });
+    } else {
+      res.status(404).json({ message: 'Author not found' });
+    }
+  } catch (error) {
+    console.log(error);
+    response.status(500).json({ message: error.sqlMessage });
+  }
+});
+
 module.exports = router;
