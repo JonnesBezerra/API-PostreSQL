@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/JonnesBezerra/API_PostreSQL/issues"
   },
-  "homepage": "https://github.com/JonnesBezerra/API_PostreSQL#readme"
+  "homepage": "https://github.com/JonnesBezerra/API_PostreSQL#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "pine": "^1.1.1",
+    "sequelize": "^6.25.8"
+  }
 }
