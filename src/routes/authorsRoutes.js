@@ -17,7 +17,11 @@ router.get('/:id', async (request, response) => {
   try {
     const { id } = request.params;
     const { rows } = await authorDB.findByID(id);
-    response.status(201).json(...rows);
+    if (rows.length) {
+      response.status(201).json(...rows);
+    } else {
+      response.status(404).json({ message: 'Author not found' });
+    }
   } catch (error) {
     console.log(error);
     response.status(500).json({ message: error.sqlMessage });
