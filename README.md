@@ -1,8 +1,9 @@
 # API-PostreSQL
 
+---
 School work of Data Base II
 
-Made by [@CarlosAlmeida](https://github.com/carlosalmeida-web) and [@JonnesBezerra](https://github.com/JonnesBezerra)
+Made by [@CarlosAlmeida]() and [@JonnesBezerra](https://github.com/JonnesBezerra)
 
 ---
 ### Create DB Library with the ```script_db_biblioteca.sql``` file.
